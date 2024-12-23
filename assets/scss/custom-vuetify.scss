@@ -11,11 +11,3 @@
     color: #7A91A9 !important;
   }
 }
-
-.v-text-field  {
-  &:not(.v-text-field--rounded) {
-    fieldset {
-      border-radius: $border-radius-root;
-    }
-  }
-}

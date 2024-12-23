@@ -1,4 +1,4 @@
-@import 'colors';
+@import 'variables';
 @import 'custom';
 @import 'custom-vuetify';
 @import 'components/buttons';
@@ -13,7 +13,7 @@
   font-size: 16px;
 
   .theme--light.v-application {
-    color: #263043;
+    color: $black;
   }
 
   .container {
@@ -36,7 +36,7 @@
 }
 
 .v-application {
-  font-family: 'Source Sans Pro', sans-serif !important;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .ruqi_scrollbar,
@@ -47,7 +47,7 @@
   }
 
   &::-webkit-scrollbar-track {
-    background-color: $light_blue;
+    background-color: $light-blue;
   }
 
   &::-webkit-scrollbar-thumb {
@@ -77,7 +77,6 @@
 }
 
 /* Grid*/
-
 .w-100 {
   width: 100%;
 
@@ -91,7 +90,6 @@
 }
 
 /* Blocks */
-
 .wrapp-alert {
   position: fixed;
   width: 100%;
@@ -115,33 +113,32 @@
 }
 
 /* Buttons  */
-
 .ruqi {
   .v-btn {
     letter-spacing: 0;
 
-    &.btn-blue {
+    .btn-blue {
       font-weight: 700;
-      background-color: #0082de;
-      color: white;
+      background-color: $blue;
+      color: $white;
       border: none;
 
       &:hover {
-        background-color: #004781;
+        background-color: $dark-blue;
       }
       &.v-btn--disabled {
-        background-color: #eff1f2;
+        background-color: $anti-flash-white;
       }
     }
 
-    &.btn-white {
+    .btn-white {
       font-weight: 700;
-      background-color: #fff;
-      border: 1px solid #c9c9c9;
+      background-color: $white;
+      border: 1px solid $grey-x11;
       padding: 10px 20px;
 
       &:hover {
-        background-color: #fcfeff;
+        background-color: $alice-blue;
       }
     }
 
@@ -153,7 +150,7 @@
       margin-left: 12px;
     }
 
-    &.add {
+    .add {
       font-weight: 700;
 
       .v-icon {
@@ -161,23 +158,23 @@
       }
 
       &:hover {
-        background-color: #004781;
+        background-color: $dark-blue;
       }
     }
 
-    &.btn-close {
+    .btn-close {
       font-weight: 700;
     }
 
-    &.btn-back {
+    .btn-back {
       color: $grey;
       font-weight: 700;
     }
 
-    &.btn-blue-border {
+    .btn-blue-border {
       color: $grey;
       font-weight: 700;
-      border: 2px solid #1f91e2;
+      border: 2px solid $vivid-blue;
       border-radius: 8px;
     }
   }
@@ -187,13 +184,12 @@
   }
 
   .actions-btn {
-    background: #f4f4f4;
+    background: $grey-divider;
     border-radius: 8px;
   }
 }
 
 /* Headers */
-
 h1 {
   font-size: 44px;
   color: $black;
@@ -205,13 +201,11 @@ h1.large {
 }
 
 /* Text */
-
 .no-wrap {
   white-space: nowrap;
 }
 
 /* Fields style */
-
 .ruqi {
   .v-select > .v-input__control > .v-input__slot {
     border-radius: 10px;
@@ -239,13 +233,13 @@ h1.large {
   .v-text-field--outlined.v-input--is-focused.error--text fieldset,
   .v-text-field--outlined.v-input--has-state.error--text fieldset {
     border: 1px solid $red;
-    background-color: $light_red;
+    background-color: $light-red;
   }
 
   .theme--light.v-text-field--filled:not(.v-input--is-focused):not(.v-input--has-state)
     > .v-input__control
     > .v-input__slot:hover {
-    background: white;
+    background: $white;
 
     .v-text-field--outlined.v-input--is-focused fieldset,
     .v-text-field--outlined.v-input--has-state fieldset {
@@ -311,7 +305,7 @@ h1.large {
     }
 
     &::-webkit-scrollbar-track {
-      background-color: $light_blue;
+      background-color: $light-blue;
     }
 
     &::-webkit-scrollbar-thumb {
@@ -335,7 +329,7 @@ h1.large {
   }
 
   .theme--light.v-label {
-    color: $granite_gray;
+    color: $granite-gray;
   }
 
   .actions-menu {
@@ -348,22 +342,21 @@ h1.large {
     width: 100%;
     text-decoration: none;
     text-transform: none;
-    color: #263043;
+    color: $black;
     font-weight: 600;
     padding: 8px 16px;
     cursor: pointer;
 
     .v-icon {
-      color: #bbb;
+      color: $grey-x11;
       margin-right: 8px;
     }
 
     &:hover {
-      background: #f2f8ff;
+      background: $alice-blue;
     }
   }
 
-  /** deprecated **/
   .card-actions-menu {
     width: 285px;
 
@@ -378,24 +371,23 @@ h1.large {
     a {
       text-decoration: none;
       text-transform: none;
-      color: #263043;
+      color: $black;
       font-weight: 600;
 
       .v-icon {
-        color: #bbb;
+        color: $grey-x11;
         margin-right: 8px;
       }
     }
 
     .v-divider {
       margin: 12px 0;
-      border-color: #f5f5f5;
+      border-color: $grey-divider;
     }
   }
 }
 
 /* Tabs */
-
 .ruqi {
   .table-filter-row {
     .v-tabs {
@@ -437,7 +429,7 @@ h1.large {
     margin-bottom: 48px;
 
     .v-tab {
-      border-bottom: 1px solid $light_grey;
+      border-bottom: 1px solid $light-grey;
       text-transform: none;
       font-size: 16px;
       color: $dark-grey;
@@ -458,7 +450,7 @@ h1.large {
   .wrap-tabs {
     .v-tab {
       .count {
-        color: #263043;
+        color: $black;
         display: inline-block;
         margin-left: 8px;
       }
@@ -467,7 +459,7 @@ h1.large {
 
   .v-tabs-bar {
     background-color: transparent;
-    border: 1px solid $light_grey;
+    border: 1px solid $light-grey;
   }
 
   .form-tabs-minify {
@@ -483,7 +475,7 @@ h1.large {
         border: none;
         text-transform: none;
         font-size: 16px;
-        color: #666;
+        color: $granite-gray;
         font-weight: 600;
         height: 36px;
         padding: 0 20px;
@@ -495,8 +487,8 @@ h1.large {
       }
 
       .v-tab.v-tab--active {
-        color: #263043;
-        background: #f2f8ff;
+        color: $black;
+        background: $alice-blue;
         &:first-child {
           border-radius: 4px 0 0 4px;
         }
@@ -549,8 +541,8 @@ h1.large {
       font-weight: 600;
 
       thead th {
-        border: none !important;
-        padding: 10px 20px !important;
+        border: none;
+        padding: 10px 20px;
         white-space: nowrap;
 
         span {
@@ -569,7 +561,7 @@ h1.large {
           height: 85px;
           border-top: 1px solid $table-border-color;
           border-bottom: 1px solid $table-border-color;
-          background: #fff;
+          background: $white;
           transition: box-shadow 0.2s ease-in;
           font-size: 16px;
           white-space: nowrap;
@@ -588,11 +580,11 @@ h1.large {
       }
 
       tbody tr:hover {
-        box-shadow: 0 4px 25px #edeef1;
+        box-shadow: 0 4px 25px $grey-shadow;
         z-index: 1;
 
         td {
-          background: #fff;
+          background: $white;
         }
 
         td:first-child {
@@ -611,13 +603,13 @@ h1.large {
   }
 
   &.minify-header {
-    background: #f5f5f5;
+    background: $grey-divider;
     padding: 0 24px;
     position: relative;
     margin-top: -16px;
 
     .minify-header-substrate {
-      background: #fff;
+      background: $white;
       width: 100%;
       height: 56px;
       position: absolute;
@@ -637,22 +629,22 @@ h1.large {
     }
 
     .v-data-table {
-      background: #f5f5f5;
+      background: $grey-divider;
 
       > .v-data-table__wrapper {
         thead {
           th {
-            padding: 5px 0px 5px 12px !important;
-            background: #fff;
-            border-top: 1px solid $table-border-color !important;
-            border-bottom: 1px solid $table-border-color !important;
+            padding: 5px 0px 5px 12px;
+            background: $white;
+            border-top: 1px solid $table-border-color;
+            border-bottom: 1px solid $table-border-color;
             height: 40px;
             position: relative;
 
             &:first-child {
               width: 30px;
               text-align: center;
-              padding-left: 14px !important;
+              padding-left: 14px;
 
               .v-input--selection-controls__input {
                 margin: 0;
@@ -671,7 +663,7 @@ h1.large {
               left: 0;
               width: 100%;
               height: 1px;
-              background: #f5f5f5;
+              background: $grey-divider;
             }
 
             &:before {
@@ -683,7 +675,7 @@ h1.large {
               width: 1px;
               height: 22px;
               margin-top: -11px;
-              background: #eee;
+              background: $grey-divider;
             }
 
             &.actions:before {
@@ -699,13 +691,13 @@ h1.large {
 
         tbody {
           td {
-            padding: 5px 12px !important;
+            padding: 5px 12px;
             white-space: nowrap;
 
             &:first-child {
               width: 30px;
               text-align: center;
-              padding-left: 25px !important;
+              padding-left: 25px;
 
               .v-input--selection-controls__input {
                 margin: 0;
@@ -717,11 +709,11 @@ h1.large {
             }
 
             .v-btn.actions-btn {
-              background: #f5f7f9;
+              background: $grey-background;
               border-radius: 4px;
               width: 30px;
               height: 30px;
-              color: #aaa;
+              color: $grey-action;
               margin: 0;
             }
 
@@ -769,8 +761,8 @@ h1.large {
 
         thead {
           th {
-            border: none !important;
-            padding: 10px 12px !important;
+            border: none;
+            padding: 10px 12px;
             background: transparent;
 
             span {
@@ -784,7 +776,6 @@ h1.large {
         }
 
         tbody {
-          // box-shadow: 0 6px 73px rgb(0 0 0 / 7%);
           border-radius: 14px;
 
           tr {
@@ -798,7 +789,7 @@ h1.large {
             td {
               padding: 10px 12px;
               height: 85px;
-              border-bottom: 1px solid $table-border-color;
+              border-bottom: 1px solid $grey-border-light;
               font-size: 16px;
 
               .v-btn {
@@ -814,7 +805,7 @@ h1.large {
 
               table {
                 .v-btn {
-                  color: #fff;
+                  color: $white;
                 }
 
                 fieldset {
@@ -851,12 +842,12 @@ h1.large {
 
           tr.v-data-table__expanded__row {
             td {
-              background: #f6fbff;
+              background: $alice-blue;
             }
           }
 
           tr.v-data-table__expanded__content {
-            background: #f6fbff;
+            background: $alice-blue;
 
             tbody {
               box-shadow: none;
@@ -871,7 +862,7 @@ h1.large {
                 .theme--light.v-text-field--filled:not(.v-input--is-focused):not(.v-input--has-state)
                   > .v-input__control
                   > .v-input__slot:hover {
-                  background: #fff;
+                  background: $white;
                 }
               }
             }
@@ -905,7 +896,7 @@ h1.large {
             }
 
             td.total {
-              background: $light_blue;
+              background: $light-blue;
               height: 47px;
               color: $black;
               font-weight: 700;
@@ -914,7 +905,7 @@ h1.large {
 
           tr:hover {
             td {
-              background: #f6fbff;
+              background: $alice-blue;
             }
           }
 
@@ -947,12 +938,12 @@ h1.large {
   }
 
   &.minify-header {
-    background: #f5f5f5;
+    background: $grey-divider;
     padding: 0 24px;
     position: relative;
 
     .minify-header-substrate {
-      background: #fff;
+      background: $white;
       width: 100%;
       height: 56px;
       position: absolute;
@@ -972,22 +963,22 @@ h1.large {
     }
 
     .v-data-table {
-      background: #f5f5f5;
+      background: $grey-divider;
 
       > .v-data-table__wrapper {
         thead {
           th {
-            padding: 5px 0px 5px 12px !important;
-            background: #fff !important;
-            border-top: 1px solid $table-border-color !important;
-            border-bottom: 1px solid $table-border-color !important;
+            padding: 5px 0px 5px 12px;
+            background: $white;
+            border-top: 1px solid $table-border-color;
+            border-bottom: 1px solid $table-border-color;
             height: 40px;
             position: relative;
 
             &:first-child {
               width: 30px;
               text-align: center;
-              padding-left: 25px !important;
+              padding-left: 25px;
 
               .v-input--selection-controls__input {
                 margin: 0;
@@ -1006,7 +997,7 @@ h1.large {
               left: 0;
               width: 100%;
               height: 1px;
-              background: #f5f5f5;
+              background: $grey-divider;
             }
 
             &:before {
@@ -1018,7 +1009,7 @@ h1.large {
               width: 1px;
               height: 22px;
               margin-top: -11px;
-              background: #eee;
+              background: $grey-divider;
             }
 
             &.actions:before {
@@ -1034,14 +1025,14 @@ h1.large {
 
         tbody {
           td {
-            padding: 5px 12px !important;
+            padding: 5px 12px;
             white-space: nowrap;
-            background: #fff;
+            background: $white;
 
             &:first-child {
               width: 30px;
               text-align: center;
-              padding-left: 25px !important;
+              padding-left: 25px;
 
               .v-input--selection-controls__input {
                 margin: 0;
@@ -1053,11 +1044,11 @@ h1.large {
             }
 
             .v-btn.actions-btn {
-              background: #f5f7f9;
+              background: $grey-background;
               border-radius: 4px;
               width: 30px;
               height: 30px;
-              color: #aaa;
+              color: $grey-action;
               margin: 0;
             }
 
@@ -1085,17 +1076,17 @@ h1.large {
       table {
         border-collapse: separate;
         border-spacing: 0;
-        color: #666;
-        background: #fff;
+        color: $granite-gray;
+        background: $white;
         font-weight: 600;
         margin: 0;
 
         thead {
           th {
-            padding: 5px 0px 5px 12px !important;
+            padding: 5px 0px 5px 12px;
             background: transparent;
-            border-top: 1px solid #e0e0e0;
-            border-bottom: 1px solid #e0e0e0;
+            border-top: 1px solid $border-color;
+            border-bottom: 1px solid $border-color;
             height: 40px;
             position: relative;
             font-size: 12px;
@@ -1103,7 +1094,7 @@ h1.large {
             &:first-child {
               width: 30px;
               text-align: center;
-              padding-left: 25px !important;
+              padding-left: 25px;
 
               .v-input--selection-controls__input {
                 margin: 0;
@@ -1118,7 +1109,7 @@ h1.large {
               left: 0;
               width: 100%;
               height: 1px;
-              background: #f5f5f5;
+              background: $grey-divider;
             }
 
             &:before {
@@ -1130,7 +1121,7 @@ h1.large {
               width: 1px;
               height: 22px;
               margin-top: -11px;
-              background: #eee;
+              background: $grey-divider;
             }
 
             &.actions:before {
@@ -1146,16 +1137,16 @@ h1.large {
 
         tbody {
           td {
-            padding: 5px 12px !important;
+            padding: 5px 12px;
             white-space: nowrap;
-            border-bottom: 1px solid #f7f7f7 !important;
+            border-bottom: 1px solid $grey-border-light;
             font-size: 16px;
             font-weight: 600;
 
             &:first-child {
               width: 30px;
               text-align: center;
-              padding-left: 25px !important;
+              padding-left: 25px;
 
               .v-input--selection-controls__input {
                 margin: 0;
@@ -1167,11 +1158,11 @@ h1.large {
             }
 
             .v-btn.actions-btn {
-              background: #f5f7f9;
+              background: $grey-background;
               border-radius: 4px;
               width: 30px;
               height: 30px;
-              color: #aaa;
+              color: $grey-action;
               margin: 0;
             }
 
@@ -1185,10 +1176,10 @@ h1.large {
             }
 
             .professions {
-              color: #263043;
+              color: $black;
 
               .count {
-                color: #aeaeae;
+                color: $grey-light;
                 display: inline-block;
                 margin-left: 4px;
               }
@@ -1199,7 +1190,7 @@ h1.large {
 
       tr:hover {
         td {
-          background: $light_blue;
+          background: $alice-blue;
         }
       }
     }
@@ -1213,10 +1204,10 @@ h1.large {
 
   .rate-list {
     padding: 16px 0;
-    border: 1px solid #e2e4e5;
-    box-shadow: 0 4px 25px #edeef1;
+    border: 1px solid $grey-border;
+    box-shadow: 0 4px 25px $grey-shadow;
     border-radius: 10px;
-    background: #fff;
+    background: $white;
 
     .rate-list-item {
       width: 215px;
@@ -1234,28 +1225,28 @@ h1.large {
         align-items: center;
 
         &.up {
-          color: #71d472;
+          color: $pastel-green;
 
           .v-icon {
-            color: #71d472;
+            color: $pastel-green;
           }
         }
 
         &.down {
-          color: #eb4d3d;
+          color: $red;
 
           .v-icon {
-            color: #eb4d3d;
+            color: $red;
           }
         }
       }
 
       &.current {
-        background: #f2f4f5;
+        background: $anti-flash-white;
         padding: 8px 24px;
 
         .rate-list-item-price {
-          color: #263043;
+          color: $black;
         }
       }
     }
@@ -1290,20 +1281,17 @@ h1.large {
 }
 
 /* Pagination */
-
 .ruqi {
   .v-application {
     .primary:not(.v-progress-linear__background, .new-btn, .v-picker__title) {
-      /*класс .new для того чтобы стили применялись только для старой верстки*/
-      color: $blue !important;
-      border-color: $blue !important;
-      // background: #fff !Important;
+      color: $blue;
+      border-color: $blue;
     }
   }
 
   .v-data-table__progress {
     .primary {
-      background: $blue !important;
+      background: $blue;
     }
   }
 
@@ -1311,7 +1299,7 @@ h1.large {
   .v-pagination__item--active,
   .v-pagination__navigation {
     box-shadow: none;
-    border: 1px solid #dfe3e8;
+    border: 1px solid $table-border-color;
     box-sizing: border-box;
     border-radius: 4px;
   }
@@ -1328,7 +1316,7 @@ h1.large {
     .v-text-field--outlined > .v-input__control > .v-input__slot {
       width: 32px;
       height: 32px;
-      padding: 2px !important;
+      padding: 2px;
       margin: 0;
       min-height: 32px;
     }
@@ -1345,12 +1333,11 @@ h1.large {
 }
 
 /* Forms */
-
 .wrap-form {
   max-width: 803px;
 
   .form-part {
-    background: #f6fbff;
+    background: $alice-blue;
     padding: 32px 150px 32px 28px;
     border: 1px solid $table-border-color;
     border-radius: 30px;
@@ -1399,7 +1386,7 @@ h1.large {
   }
 
   .theme--light.v-text-field--filled > .v-input__control > .v-input__slot {
-    background: #fff;
+    background: $white;
   }
 
   .theme--light.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state)
@@ -1470,7 +1457,7 @@ h1.large {
     display: inline-block;
     font-weight: 600;
     font-size: 14px;
-    color: #eb4d3d;
+    color: $red;
   }
 }
 
@@ -1479,10 +1466,9 @@ h1.large {
 }
 
 /* Object info */
-
 .object-info {
-  background: #fff;
-  border: 1px solid #e0e0e0;
+  background: $white;
+  border: 1px solid $border-color;
   border-radius: 20px;
   padding: 24px 0;
   max-width: 804px;
@@ -1523,7 +1509,7 @@ h1.large {
 }
 
 .modal-dialog {
-  border-radius: 16px !important;
+  border-radius: 16px;
 }
 
 .close-menu-mask {
