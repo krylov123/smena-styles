@@ -1,13 +1,13 @@
-.wrapper-field-prefix-selected-color-primary {
-  .v-text-field fieldset {
-    border-radius: 10px !important;
-  }
-  .v-select__selection--comma,
-  input {
-    color: $blue !important;
-    font-weight: 600 !important;
-  }
-  .v-text-field__prefix {
-    color: #7A91A9 !important;
-  }
+.wrapper-field-prefix-selected-color-primary .v-text-field fieldset {
+  border-radius: 10px !important;
+}
+
+.wrapper-field-prefix-selected-color-primary .v-select__selection--comma,
+.wrapper-field-prefix-selected-color-primary input {
+  color: $blue !important;
+  font-weight: 600 !important;
+}
+
+.wrapper-field-prefix-selected-color-primary .v-text-field__prefix {
+  color: #7A91A9 !important;
 }

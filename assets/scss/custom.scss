@@ -1,37 +1,35 @@
 :root {
-   --btn-border-radius: 8px;
- }
-/*@media (max-width: 1000px) {
-  :root {
-    --btn-border-radius: 4px;
-  }
-}*/
+  --btn-border-radius: 8px;
+}
+
 .pointer {
   cursor: pointer !important;
 }
+
 .pointer-events-none {
   pointer-events: none !important;
 }
-/*padding*/
-.pl-6-05 { // 20px
-  padding-left: 18 * 6 + 2 !important;
+
+.pl-6-05 {
+  padding-left: 110px !important;
 }
 
-/*border*/
 .border-all {
   border: 1px solid $border-color !important;
 }
+
 .br-14 {
   border-radius: 14px !important;
 }
+
 .br-8 {
   border-radius: 8px !important;
 }
+
 .br-full {
   border-radius: 50% !important;
 }
 
-/*box-shadow*/
 .box-shadow {
   box-shadow: 0 4px 25px #edeef1 !important;
 }
@@ -44,10 +42,10 @@
   width: 100%;
 }
 
-/*fonts*/
 .fz-18 {
   font-size: 18px !important;
 }
+
 .fz-32 {
   font-size: 32px !important;
 }
