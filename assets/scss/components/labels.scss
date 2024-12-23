@@ -1,0 +1,45 @@
+.rectangular_color_label {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  padding: 0 8px;
+  border-radius: 6px;
+  cursor: default;
+  .left_icon {
+    margin-right: 10px;
+    height: 16px;
+    width: auto;
+    color: inherit !important;
+  }
+  &.ct_grey {
+    background-color: $anti_flash_white;
+    color: $grey;
+  }
+  &.ct_yellow {
+    background-color: $light_yellow;
+    color: $crayola;
+  }
+  &.ct_red {
+    background-color: $light_red;
+    color: $red;
+  }
+  &.ct_green {
+    background-color: $light_green;
+    color: $pastel_green;
+  }
+}
+
+.rounded_edges_label {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  padding: 0 8px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: default;
+  background-color: $blue;
+  color: white;
+}

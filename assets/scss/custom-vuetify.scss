@@ -1,0 +1,21 @@
+.wrapper-field-prefix-selected-color-primary {
+  .v-text-field fieldset {
+    border-radius: 10px !important;
+  }
+  .v-select__selection--comma,
+  input {
+    color: $blue !important;
+    font-weight: 600 !important;
+  }
+  .v-text-field__prefix {
+    color: #7A91A9 !important;
+  }
+}
+
+.v-text-field  {
+  &:not(.v-text-field--rounded) {
+    fieldset {
+      border-radius: $border-radius-root;
+    }
+  }
+}

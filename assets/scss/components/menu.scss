@@ -1,0 +1,52 @@
+.v-menu__content.ruqi_drop_menu {
+  box-shadow: none;
+  background-color: transparent;
+  overflow-y: visible;
+  overflow-x: visible;
+  contain: none;
+  z-index: 300 !important;
+  .v-sheet.v-card {
+    padding: 7px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 40px 0 rgb(2 2 2 / 9%);
+    color: $black;
+  }
+  .ruqi_drop_menu_item {
+    padding: 8px 20px 8px 14px;
+    font-weight: 600;
+    color: $black;
+    cursor: pointer;
+    display: flex;
+    .ob_title {
+      padding-right: 15px;
+      user-select: none;
+      white-space: nowrap;
+    }
+    .left_icon,
+    .left_img,
+    .left_img_hover {
+      margin-right: 8px;
+    }
+    .right_arrow {
+      margin-left: 8px;
+      margin-right: -8px;
+    }
+    .left_icon,
+    .right_arrow {
+      width: 24px;
+      height: 24px;
+      overflow: hidden;
+      color: inherit !important;
+    }
+    &.align_right {
+      justify-content: flex-end;
+    }
+    &:hover:not(.disabled) {
+      color: $dark_blue;
+    }
+    &.disabled {
+      opacity: 0.4;
+      cursor: default;
+    }
+  }
+}
